@@ -33,3 +33,20 @@ nome = Console.ReadLine();
 string resultado = $"Aoba bão, {nome}! Bão que um mé?";
 Console.WriteLine(resultado);
 
+
+// Aula 240304
+
+// Substituindo conteudo de strings
+
+string nomeCompleto = "Alex Kophal Knecht";
+nomeCompleto = nomeCompleto.Replace("Kopahl", "Jaguara" );
+Console.WriteLine(nomeCompleto);
+
+// Comparação de Strings
+bool isNomeEqual = (nomeCompleto == "Alex Kophal Knecht");
+
+bool isNomeEqual2 = string.Equals(nomeCompleto, "Alex Jaguara Knecht");
+
+Console.WriteLine($"Primeiro resultado: {isNomeEqual}");
+Console.WriteLine($"Segundo Resultado: {isNomeEqual2}");
+
