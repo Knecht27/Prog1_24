@@ -1,0 +1,136 @@
+1) Após sincronizar a sua Branch main, tire uma nova branch para o exercicio;
+
+2) Crie um novo projeto na pasta atividades com o nome Atividade_240304
+
+3) Crie um programa em C# que seja capaz de realizar as quatro operações aritiméticas basicas;
+
+a) Leia o primeiro operando;
+b) Leia o operador aritmético;
+c) Leia o segundo numero;
+Identifique qual operação foi solicitada pelo usuario, permitindo trabalhar com numéros reais e inteiros, processe e exiba o resultado;
+
+Ao final envie a branch para o git hub e abra um PullRequest;
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Aula04 11/03/24 
+
+1) Commit, push, abrir pull request, fazer merge com main ou master
+
+2) Escreva um
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Aula06 25/03/2024
+
+Programação orientada a objetos
+
+Uma abordagem para projetar e construir aplicações que são:
+
+-Flexíveis
+-Naturais
+-Bem Elaboradas
+-Testáveis
+
+Focada em objetos que interagem uns com os outros.
+
+Identificando Classes e Requisitos
+
+	Requisitos:
+Você recebeu um e-mail de uma amiga veterinária, informando que está ccom problemas para gerenciar os atendimentos dos pets. Na mensagem, ela diz que gostaria de ter registros dos animais, que precisa também dos dados dos seus parceiros veterinários que atendem no centro clinico para poder saber quais médicos atenderam quais animais em determinados período de tempo, ou até mesmo, registrar quais procedimentos foram realizados com os animais nos ultimos atendimentos.
+
+
+	Primeiros passos;
+Inicie com os nomes
+      \/
+Quais são as palavras-chaves informadas no requisito que são essencias para ajudar a resolver o problema de nossa amiga veterinaria?
+R: gerenciar atendimentos pets
+   parceiros veterinarios 
+   
+
+	Segundo passo;
+Defina os membros apropriados
+      \/
+Quais são as Propriedades(dados) e os Métodos (operações) fundamentais para iniciar a construção deste software?
+      \/
+Descreva quais as propriedades necessarias para sua proposta pensando naas seguintes entidades:
+-Animal, Veterinario, Atendimento, Clínica 
+
+Animal: Peso, Raça, Porte, Data de nascimento, Nome, sexo, responsavel
+Veterinario: Nome, Especialidade, Email, telefone, documentos
+Atendimento: Qualidade, Duração, medicamentos, diagnosticos, data
+Clínica: nome da Clinica, local da clinica 
+
+	O efeito TEMPO
+
+Considere o efeito TEMPO em sua aplicação, com o passar dos anos os dados podem sofrer alterações, o responsavel por um animal pode mudar, um telefone ou e-mail por exemplo
+
+O TEMPO é uma quarta dimensão a ser considerada, se algum dado do veterinario, da clinica ou do animal for alterado, isto influenciaria nos dados armazenados do atendimentos?
+
+Utilize sempre os conceitos de abstração e encapsulamento para responder a estas perguntas!
+
+	Abstração
+O processo de abstração dependera dos requisitos da aplicação. Em nosso caso, temos a ENTIDADE veterinario, onde faz-se necessario registrar poucos dados (Nome, Email, Telefone, CRM) devido ao escopo reduzido do problema, mas, se estivéssemos modelando um sistema mais robusto para aplicação diversas, certamente precissariamos de mais informações sobre o veterinari, como endereço, especialidade, etc.
+
+É o processo de definir classes simplificando a realidade, ignorando detalhes desnecessarios e focando apenas no que é relevante ao escopo da aplicação
+
+É um dos pilares da POO/OOP
+
+	Encapsulamento
+Outro pilar da programação OO;
+
+Técnica para 'esconder' os dados e os detalhes da implementação em uma classe;
+
+Utilizado para garantir que os outros códigos do sistema não se preucupem em saber os detalhes da implementação;
+
+Estas propriedades são disponibilizadas para o resto do sistema por meio de métodos de gravação e leitura chamados de Getters e Setters, protegendo os dados e facilitando validação e autorização;
+
+	Criando Objetos
+Agora que definimos a primeira classe, podemos criar instancias de objetos deste tipo:
+
+Custumer: O tipo de variável é a especificação do tipo do objeto     var custumer = new Customer();
+
+custumer: váriavel objeto criada na memória            Customer customer = new Customer();
+
+Podemos declarar uma variável utilizando a palavra reservada var.
+var define um tipo implicito de variavel que é fortimente tipada de acordo com a especificação de chamada do construtor da variavel.
+
+	Objetos são tipos referenciados
+Objetos guardam um ponteiro de memória para os dados e não os dados em si mesmo
+
+diferente dos tipos de dados por valor, que armazenam os dados diretamente;
+
+observe o código, qual o valor de I1?
+
+Int I1;
+I1 = 42;
+Int I2 = I1;
+I2 = 2;
+
+I1 = 42     I2 = 2
+
+
+E agora, quando operamos com Objetos?
+- C1 é atribuido o nome Bilbo;
+- C2 é criado cmo uma cópia de C1, um ponteiro;
+- C2 altera o nome para Frodo;
+- RESULTADO: Tanto C1 quanto C2 possuem o nome Frodo;
+
+var C1 = new Custumer();
+C1.FirstName = "Bilbo";
+
+var C2 = C1;
+C2.FirstName = "Frodo";
+
+	Modificador STATIC
+
+ public static int InstanceCount {get; set;}
+
+O modificador static declara um membro que pertence à classe em si mesma e não à instãncia do objeto.
+
+Útil para rastrear informações compartilhadas entre todas as instâncias de objetos daquele tipo.
+
+Para acessar atributos estáticos, referenciamos o tipo.propriedade:
+Customer.instanceCount +=1;
