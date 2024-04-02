@@ -1,0 +1,107 @@
+Classes Identificadas
+
+Custumer
+name
+Email addres
+Home addres
+Work addres
+Validate()
+Retrive()
+Save()
+
+
+Product
+Product name
+Descripition
+Current price
+Validate()
+Retrive()
+Save()
+
+
+Order
+Custumer
+Order date
+Shipping addres
+Order item
+Validate()
+Retriver()
+Save()
+
+Order item
+Product
+Quantity 
+Purchase price
+Validate()
+Retriver()
+Save()
+
+	Construindo um classe com Métodos
+Adicione o médoto Validate() a classe Customer
+
+public bool Validate()
+{ 
+  var isValid = true;
+  if (string.IsNullOrwhiteSpace(Name) isValid = false;
+  if (string.IsNullOrwhiteSpace(EmailAddres) isValid = false;
+  return isValid;
+}
+
+	Termos: Assinaturas dos Métodos
+
+Composto pelo nome e conjunto de parâmetros e seus tipos;
+Não inclui o tipo de retorno;
+Utilizado pelo sistema para orientar as chamadas de funções;
+Cada assinatura de um método na classe deve ser unico;
+mas se possuirmos métodos com parãmetros diferentes eles podem ter o memo nome;
+
+	Termos: Sobrecarga/Overloading
+Usado para descrever métodos que possuem o mesmo nome com diferentes parãmetros;
+Métodos que são usados com o mesmo nome, devem prover variações da mesma funcionalidade;
+No exemplo, um método retorna um Customer, enquanto o outro retorna uma coleção de consumidores List<Customer>;
+utilize void quando não houver nada a retornar;
+
+	Termo: Contract
+As especificações dos modificadores de acesso definem o contrato da classe. Quais atributos e métodos estarão visíveis, para quem e em que nível de acesso.
+
+	Construtores
+Um tipo especial de método com o mesmo nome da classe;
+Geralemtne definidos no primeiro parágrafo da classe;
+É o método execuado quando um objeto do tipo da classe é criado;
+um método construtor sem parâmetros é definido como construtor padrão (default constructor);
+Podemos fazer a sobre carga (overloading) de construtores;
+
+	responsabilidades
+Mantenha suas classes focadas mantendo as responsabilidades bem definidas;
+imagine uma empresa em que o Presidente é responsavel por tudo. Isto não é uma boa idéia, conforme o negócio cresce ele precisará delegar responsabilidades para outras pessoas;
+O mesmo ocorre com nossa aplicação, conforme ela cresce, fica dificil de mantê-la se as 
+
+	Separando as responsabilidades
+Avalie se a classe deve realmente fazer tudo aquilo que foi especificado, ou se ea deva ser fragmentada em classes menores;
+Este principio tem por objetivo fragmentar a aplicação em partes em que cada parte fique responsável por uma "preucupação' em específico;
+Minimiza o Acoplamento;
+Maximiza a coesão;
+Simplifica a Manutenção;
+Facilita o teste;
+
+	Minimizar o Acoplamento
+Aclopamento é o grau de dependencia de uma classe para com outra ou com recursos externos;
+Quando menos dependencias uma classe tiver, mais fácil é de escrever rotinas de teste, manter e atualizar com o tempo;
+Se houverem muitas dependencias em uma classe, considere mover algum
+
+
+por exemplo, as classe definidas possuem métodos responsabilidades que são da camada de acesso a dados.
+Minimiza o risco de uma mudança de uma classe afetar as outras.
+
+	Maximizar Coesão
+É uma medida de quão relacionado tudo na classe é o propósito da classe;
+Se houverem métodos ou atributos que não são relacionados ao propósitos da classe, eles devem ser movidos para outra classe;
+Por exemplo, o endereço de entrega. Ele possui muitos atributos e informações que não são especificamente do pedido, nem do consumidor, mas do endereço em sua essencia;
+Assim, poderiamos mover a especificação de endereço para uma classe definida para ela;
+
+	Bordões
+YAGNI - You Aren't Gonna Need it
+
+KISS - Keep It Simple, Stupid!
+
+DRY - Don't Repeat Yourself
