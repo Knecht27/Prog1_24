@@ -13,6 +13,7 @@ namespace _240401_07.Models
         public string EmailAddres {get; set;}
         public string HomeAddres {get; set;}
         public string WorkAddres {get; set;}
+        public List<Address> Addresses { get; set; }
 
         public Customer()
         {
