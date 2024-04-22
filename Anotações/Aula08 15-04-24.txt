@@ -1,0 +1,14 @@
+	Bordões:
+KISS : Keep It Simple, Stupid!
+
+YAGNI : You Aren't Gonna Need It
+
+DRY : Don't Repeat Yourself
+
+
+	E quanto aos Métodos?
+
+Os métodos retrive() e Save() tem mais relação com a Camada de Dados.
+
+Podemos separa-los em uma classe especifica para lidar com o Repositório de Dados.
+
