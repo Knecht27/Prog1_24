@@ -1,0 +1,7 @@
+Pesquisar sobre arquitetura MVC
+
+Model
+Views
+Controler
+
+Implementar no algoritmo de busca na classe CustomerRepository que permita encontrar consumidores contendo em seu nome ao menos 4 caracteres digitados pelo usuario
