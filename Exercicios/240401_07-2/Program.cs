@@ -1,5 +1,41 @@
 ﻿using _240401_01.Models;
 
+bool aux = true;
+do{
+
+Console.WriteLine("***********************");
+Console.WriteLine("Meu Programa de Pedidos");
+Console.WriteLine("***********************");
+Console.WriteLine();
+
+Console.WriteLine("1 - Clientes");
+Console.WriteLine("2 - Produtos");
+Console.WriteLine("3 - Pedidos");
+Console.WriteLine("0 - SAIR DESTA BAGAÇA!");
+
+int menu = 0;
+
+try {
+    switch(menu)
+    {
+        case 1:
+        break;
+    }
+}
+
+catch{
+    Console.WriteLine("OPÇÃO INVÁLIDA!");
+    aux = true;
+
+}
+
+
+
+
+}while(aux);
+
+
+/*
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
@@ -19,3 +55,4 @@ Customer c3 = new Customer{
     Name = "Nerso",
     EmailAddress = "nerso@pixote.com"
 };
+*/
