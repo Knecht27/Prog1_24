@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ficha cadastral pega no meu pal", "Ficha cadastral pega no meu pal.csproj", "{2555C390-3369-418C-9E01-30DF47607898}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tabuada", "Tabuada.csproj", "{C2C62D87-B7E3-4363-974B-E4DF5773D5AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2555C390-3369-418C-9E01-30DF47607898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2555C390-3369-418C-9E01-30DF47607898}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2555C390-3369-418C-9E01-30DF47607898}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2555C390-3369-418C-9E01-30DF47607898}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2C62D87-B7E3-4363-974B-E4DF5773D5AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2C62D87-B7E3-4363-974B-E4DF5773D5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2C62D87-B7E3-4363-974B-E4DF5773D5AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2C62D87-B7E3-4363-974B-E4DF5773D5AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2B337BF2-AEF5-4501-835A-02BE5CFDD871}
+		SolutionGuid = {BAF6216A-BE86-4C84-BF70-F97390A3A8B3}
 	EndGlobalSection
 EndGlobal
