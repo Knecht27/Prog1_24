@@ -18,6 +18,19 @@ namespace Imobiliaria
                 TipoNegocio = "Venda"
             };
 
+            var imovel2 = new Imovel
+            {
+                Id = 2,
+                Nome = "Sitio Rio Das Antas",
+                Descricao = "Localidade no interior de Rio das Antas com 50000m²",
+                Valor = 100.000,
+                NroComodos = 6,
+                TipoImovel = "Colonia",
+                Localidade = "Rural",
+                TipoNegocio = "Venda"
+            };
+
+
             Console.WriteLine($"ID: {imovel.Id}");
             Console.WriteLine($"Nome: {imovel.Nome}");
             Console.WriteLine($"Descrição: {imovel.Descricao}");
